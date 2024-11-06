@@ -7,7 +7,7 @@
   }
   
   /* Navbar Styling */ 
-  .header-transparent {
+  .portblogHeader{
     background: transparent;
     position: absolute;
     top: 0;
@@ -17,34 +17,24 @@
     color: white;
     transition: background 0.3s ease-in-out;
   }
-  .navLinks {
-    position: relative;
-    text-decoration: none;
-    color: black;
-  }
   
-  .navLinks::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;  /* Thickness of the underline */
-    background-color: rgb(255, 255, 255); /* Color of the underline */
-    transition: width 0.3s ease;
-  }
-  
-  .navLinks:hover::after,
-  .navLinks:focus::after {
-    width: 100%; /* Expands the line to full width on hover or focus */
-  }
-    
  /* Frosted Glass Effect on Hover */
-   /* .header-transparent:hover {
-    background: rgb(38, 14, 104);
+   .portblogHeader:hover {
+    background: rgb(255, 255, 255);
     backdrop-filter: blur(10px);
-  } */
+  }
   
+  .navbarBackground{
+    background-color: #e5e2e7;
+    padding: 0.2rem;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px 1px inset;
+  }
+
+  .navLinks{
+    font-size: 20px;
+  }
   /* Responsive Adjustments */
   @media (max-width: 768px) {
     .logoImage {
@@ -52,7 +42,7 @@
       margin-left: 0;
     }
   
-    .header-transparent {
+    .portblogHeader {
       position: relative;
       background: black;
       color: white;
@@ -60,10 +50,19 @@
       height: auto;
     }
   
-    .header-transparent:hover {
+    .portblogHeader:hover {
       background: rgba(0, 0, 0, 0.9);
       color: white;
     }
+
+    .navbarBackground{
+        /* background-color: #e5e2e7;
+        padding: 0.5rem; */
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background: rgba(0, 0, 0, 0.9);
+
+      }
   
     .navbarLinks {
       display: flex;

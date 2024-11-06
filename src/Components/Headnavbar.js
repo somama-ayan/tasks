@@ -6,10 +6,11 @@ import './Headnavbar.css'
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 const Headnavbar = () => {
   return (
-    <Navbar className='header-transparent bg-dark' collapseOnSelect expand='lg'>
+    <Navbar className='header-transparent' collapseOnSelect expand='lg'>
     <Container>
       <Navbar.Brand>
         {/* <Image className='logoImage img-responsive' src={headlogo} /> */}
+        <h2 className="text-light">FLEACT TECH.</h2>
       </Navbar.Brand>
       <Navbar.Toggle
         className='navbar-dark'
@@ -22,6 +23,10 @@ const Headnavbar = () => {
             data-bs-toggle="collapse"
             data-bs-target=".navbar-collapse.show"
           >Home</Link>
+            <Link className='m-2 text-decoration-none text-light navLinks' to='/about'
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >About</Link>
           <Link className='m-2 text-decoration-none text-light navLinks' to='/services'
             data-bs-toggle="collapse"
             data-bs-target=".navbar-collapse.show"
@@ -30,17 +35,17 @@ const Headnavbar = () => {
             data-bs-toggle="collapse"
             data-bs-target=".navbar-collapse.show"
           >Portfolio</Link>
-          <Link className='m-2 text-decoration-none text-light navLinks' to='/about'
+          <Link className='m-2 text-decoration-none text-light navLinks' to='/blogs'
             data-bs-toggle="collapse"
             data-bs-target=".navbar-collapse.show"
-          >About</Link>
+          >Blogs</Link>
            <Link
               className='m-2 text-decoration-none text-light navLinks'
               to='/contact'
               data-bs-toggle="collapse"
               data-bs-target=".navbar-collapse.show"
-            ><Button style={{ background: 'purple', border: 'none' }}>
-              Contact
+            ><Button variant="outline-light" style={{fontSize:'18px', border: '2px solid white', borderRadius: '20px' }}>
+              Contact Us
           </Button>
             </Link>
         </Nav>

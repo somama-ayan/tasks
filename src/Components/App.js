@@ -7,12 +7,12 @@ import Contact from '../Pages/Contact'
 import Services from '../Pages/Services'
 import Portfolio from '../Pages/Portfolio'
 import Blogs from '../Pages/Blogs'
-import Headnavbar from './Headnavbar'
+// import Headnavbar from './Headnavbar'
 const App = () => {
   return (
     <div>
       <Router>
-        <Headnavbar />
+        {/* <Headnavbar /> */}
         <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/home' element={<Home />}/>

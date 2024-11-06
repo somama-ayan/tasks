@@ -1,0 +1,24 @@
+.about-head {
+  font-size: 48px;
+}
+.about-head span {
+  font-weight: bold;
+}
+.about-line {
+  width: 32%;
+  background-color: rgb(0, 0, 0);
+  height: 8px;
+  border: none;
+  margin-top: 0;
+}
+.about-head-para {
+  font-size: 20px;
+  margin-top: 50px;
+}
+.about-card1 button {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 13px 25px;
+  border-radius: 35px;
+  margin-top: 50px;
+}

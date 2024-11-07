@@ -41,20 +41,22 @@ const Services = () => {
   };
 
   const handleScroll = () => {
-    const servicesSection = document.getElementById("services-section");
+    const servicesSection = document.getElementById("ServicesSection");
     const rect = servicesSection.getBoundingClientRect();
     setShowLine(rect.top <= window.innerHeight && rect.bottom >= 0);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    console.log("i am ok!")
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <section className="services py-5" id="services-section">
+    <section className="services py-5" id="ServicesSection">
       <h1 className="display-4 mb-4">Our Services</h1>
       <div className={`line-below ${showLine ? "show" : ""}`}></div>
       <div className="container">

@@ -3,7 +3,9 @@ import React from 'react'
 const Contact = () => {
     return (
         <div>
-Contact
+<section id='ContactSection'>
+    Contact
+</section>
         </div>
     )
 }

@@ -26,15 +26,46 @@
   
   .navbarBackground{
     background-color: #e5e2e7;
-    padding: 0.2rem;
+    /* padding: 0.2rem; */
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px 1px inset;
+    text-transform: uppercase;
+    gap: 2.5rem;
   }
 
   .navLinks{
-    font-size: 20px;
+    font-size: 18px;
   }
+ 
+  .portblognavbarButton {
+    position: relative;
+  /* padding: 10px 30px; */
+  font-size: 18px;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #760bcb, #1e7dfa);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  
+
+
+  
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 3px #760bcb;
+  border-radius: 50px;
+  transition: all 0.4s ease; 
+}
+    
+
+  
+  .portblognavbarButton:hover {
+    color: #fff; /* White text on hover */
+  background: linear-gradient(90deg, #760bcb, #1e7dfa);
+  -webkit-text-fill-color: #fff; /* Text fill color to white */
+  box-shadow: 0 0 0 0px #ffffff;
+  }
+  
   /* Responsive Adjustments */
   @media (max-width: 768px) {
     .logoImage {

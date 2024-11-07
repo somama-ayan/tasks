@@ -38,6 +38,9 @@
   .navLinks:focus::after {
     width: 100%; /* Expands the line to full width on hover or focus */
   }
+  .navLinks .portblognavbarButton + hr {
+    display: none; /* Hide the hr immediately after the button */
+  }
     
  /* Frosted Glass Effect on Hover */
    /* .header-transparent:hover {

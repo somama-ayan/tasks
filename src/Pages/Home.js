@@ -1,6 +1,9 @@
 import React from 'react'
 import './Styles/Home.css'
 import Headnavbar from '../Components/Headnavbar'
+import About from './About'
+import Services from './Services'
+import Contact from './Contact'
 const Home = () => {
     return (
         <div>
@@ -12,6 +15,9 @@ const Home = () => {
     to solve business problems with digital solutions.</p>
     </div>
 </section>
+<About />
+<Services />
+<Contact />
         </div>
     )
 }

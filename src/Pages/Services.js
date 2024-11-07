@@ -61,7 +61,7 @@ const Services = () => {
         <div className="row align-items-center">
           <div className="col-md-6 position-relative">
             <button className="arrow-button left-arrow" onClick={handlePrevImage}>
-              <i className="bi bi-arrow-left"></i>
+            <i class="bi bi-arrow-left"></i>
             </button>
             <img 
               src={images[activeImage].src} 

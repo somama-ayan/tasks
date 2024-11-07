@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap-icons/font/bootstrap-icons.css'; // bootstrap icons
 import 'bootstrap/dist/css/bootstrap.css'; // bootstrap
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
 import Home from '../Pages/Home'

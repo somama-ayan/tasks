@@ -23,6 +23,7 @@ const Portfolio = () => {
               <span className="head1SpanPort">Creativity</span> and{" "}
               <span className="head1SpanPort">Success</span>.
             </h1>
+            <h1><i class="bi bi-arrow-left"></i></h1>
           </Col>
         </Container>
       </section>

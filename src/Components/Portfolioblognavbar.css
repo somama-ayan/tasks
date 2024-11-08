@@ -1,9 +1,10 @@
 /* Logo Styling */
-.logoImage {
-    width: 10rem;
-    background: transparent;
-    border: none;
-    margin-left: -50px;
+.logoHead {
+    /* width: 10rem; */
+    /* background: transparent; */
+    /* border: none; */
+    margin-left: 50px;
+    margin-top: 20px;
   }
   
   /* Navbar Styling */ 

@@ -1,105 +1,91 @@
 .services {
-    background-image: linear-gradient(to top,rgb(32, 32, 32),rgb(0, 0, 73));
-    padding-top: 50px;
-    padding-bottom: 50px;
-    position: relative;
-  }
-  
-  .services h1 {
-    text-align: left;
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 10px;
-    padding-left: 15px;
-  }
-  
-  .services .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .services .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .services .col-md-6 {
-    padding: 15px;
-  }
-  
-  .services img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .services .service-heading {
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 15px;
-    font-weight: bold;
-    text-align: left;
-  }
-  
-  .services p {
-    font-size: 1.2rem;
-    color: white;
-    line-height: 1.6;
-    text-align: left;
-  }
-  
-  .get-in-touch-btn {
-    font-size: 1rem;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 50px;
-    background-color: darkblue;
-    color: white;
-  }
-  
-  .get-in-touch-btn:hover {
-    background-color: white;
-    color:darkblue;
-    border: 1px solid black;
-  }
-  
-  .services .arrow-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .services .arrow-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .left-arrow {
-    left: -30px;
-  }
-  
-  .right-arrow {
-    right: -30px;
-  }
-  
-  .line-below {
-    height: 2px;
-    background-color: white;
-    width: 100px;
-    margin: 20px 0;
-    transition: width 0.3s ease;
-  }
-  
-  .line-below.show {
-    width: 100%;
-  }
-  
+  position: relative;
+  background-color: #4D198A;
+  color: white;
+  padding-left: 30px;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin-left: 50px; 
+}
+
+.service-heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.service-text {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+
+.left-arrow-fixed,
+.right-arrow-fixed {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow-fixed {
+  left: 20px;
+}
+
+.right-arrow-fixed {
+  right: 20px;
+}
+
+.get-in-touch-btn {
+  background-color: #4D198A;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.get-in-touch-btn:hover {
+  background-color: white;
+  color: #4D198A;
+  border: #ccc;
+}
+.dot-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: whitesmoke ;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: gray; 
+}
+
+

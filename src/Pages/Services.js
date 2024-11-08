@@ -42,13 +42,15 @@ const Services = () => {
   };
 
   const handleScroll = () => {
-    const servicesSection = document.getElementById("services-section");
+    const servicesSection = document.getElementById("ServicesSection");
     const rect = servicesSection.getBoundingClientRect();
     setShowLine(rect.top <= window.innerHeight && rect.bottom >= 0);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    console.log("i am ok!")
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -70,6 +72,7 @@ const Services = () => {
   }, []);
 
   return (
+<<<<<<< HEAD
     <section className="services py-5" id="services-section">
       <button
         className="left-arrow-fixed"
@@ -87,6 +90,9 @@ const Services = () => {
         <i className="bi bi-arrow-right"></i>
       </button>
 
+=======
+    <section className="services py-5" id="ServicesSection">
+>>>>>>> c13230d7616af76d0438160c5df0b55087891877
       <h1 className="display-4 mb-4">Our Services</h1>
       <div className={`line-below ${showLine ? "show" : ""}`}></div>
 

@@ -72,8 +72,7 @@ const Services = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <section className="services py-5" id="services-section">
+        <section className="services py-5" id="ServicesSection">
       <button
         className="left-arrow-fixed"
         onClick={handlePrevImage}
@@ -90,9 +89,7 @@ const Services = () => {
         <i className="bi bi-arrow-right"></i>
       </button>
 
-=======
-    <section className="services py-5" id="ServicesSection">
->>>>>>> c13230d7616af76d0438160c5df0b55087891877
+
       <h1 className="display-4 mb-4">Our Services</h1>
       <div className={`line-below ${showLine ? "show" : ""}`}></div>
 

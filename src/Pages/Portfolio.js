@@ -4,10 +4,15 @@ import Portfolioblognavbar from "../Components/Portfolioblognavbar";
 import { Col, Container, Row } from "react-bootstrap";
 import Slidercarosel from "./Portfoliochilds/Slidercarosel";
 
+import website from './Images/RestSectionImages/website.jpg'
+
 // import Carousel from 'react-bootstrap/Carousel';
 // import ExampleCarouselImage from './Images/RestSectionImages/digital.jpg';
 
 const Portfolio = () => {
+  const images = {
+     "website": website
+  }
   return (
     <div>
       <section className="headerSection">
@@ -53,9 +58,9 @@ const Portfolio = () => {
         </div>
       </section>
       {/* /////// ///////           Third section for slide                          //////////////////// */}
-      <section className="bg-dark">
+      <section className="">
 
-     <Slidercarosel />
+     <Slidercarosel images={images}/>
 
       </section> 
     </div>

@@ -1,73 +1,55 @@
 .services {
-  position: relative;
   background-color: #4D198A;
   color: white;
-  padding-left: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px 0;
 }
 
 .service-image {
-  width: 100%;
+  width: 80%;
   height: auto;
-}
-
-h1 {
-  margin-left: 50px; 
-}
-
-.service-heading {
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin-left: 30px;
-  margin-top: 20px;
-  padding-top: 20px;
-  margin-bottom: 30px;
-}
-
-.service-text {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-  margin-left: 35px;
 }
 
 .left-arrow-fixed,
 .right-arrow-fixed {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   background: transparent;
   border: none;
   color: #fff;
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2rem;
   cursor: pointer;
-  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .left-arrow-fixed {
-  left: 20px;
+  left: -50px;
 }
 
 .right-arrow-fixed {
-  right: 20px;
+  right: -50px;
 }
 
 .get-in-touch-btn {
   background-color: #4D198A;
   color: #fff;
   border: 2px solid #fff;
-  padding: 15px 30px;
+  padding: 10px 20px;
   border-radius: 50px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   font-weight: bold;
-  margin-left: 10px;
+  margin-top: 20px;
 }
 
-.get-in-touch-btn:hover {
-  background-color: white;
-  color: #4D198A;
-  border: #ccc;
-}
 .dot-container {
   display: flex;
   justify-content: center;
@@ -78,14 +60,114 @@ h1 {
   height: 10px;
   width: 10px;
   margin: 0 5px;
-  background-color: whitesmoke ;
+  background-color: whitesmoke;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .dot.active {
-  background-color: gray; 
+  background-color: gray;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .left-arrow-fixed {
+    left: 10px;
+  }
+
+  .right-arrow-fixed {
+    right: 10px;
+  }
+
+  .get-in-touch-btn {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  .dot-container {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+.process {
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+}
+
+.process h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.process .process-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.process-heading {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.process-text {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.5rem;
+  
+}
+
+@media (max-width: 768px) {
+  .process h2 {
+    font-size: 2rem;
+  }
+
+  .process .process-heading {
+    font-size: 1.1rem;
+  }
+
+  .process .process-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .process h2 {
+    font-size: 1.8rem;
+  }
+
+  .process-heading {
+    font-size: 1rem;
+  }
+
+  .process-text {
+    font-size: 0.85rem;
+  }
+}
+.process-icon {
+  display: inline-block;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 100% white;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  box-shadow:inset 0px 0px 30px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.process-icon i {
+  line-height: 100px;
+  width: 100px
+}
+.process-icon i.rotate-up {
+  transform: rotate(-90deg);
+}
 

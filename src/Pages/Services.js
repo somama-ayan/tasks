@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Styles/Services.css';
+import digital from './Images/RestSectionImages/digital.jpg';
+import website from './Images/RestSectionImages/digital.jpg';
 
 const Services = () => {
   const [activeImage, setActiveImage] = useState(0);
@@ -8,29 +10,36 @@ const Services = () => {
 
   const images = [
     { 
-      src: "https://www.fleacttech.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgd.db64e832.png&w=640&q=75", 
+      src: website, 
       alt: "services 1", 
       heading: "Web Development", 
-      text: "Elevate your Online presence with our comprehensive web development services. Our expert team combines cutting-edge technology with creative design to craft websites that not only captivate audiences but also drive results."
+      text: "Elevate your online presence with our comprehensive web development services. Our expert team combines cutting-edge technology with creative design to craft websites that not only captivate audiences but also drive results."
     },
     { 
-      src: "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fbanners%2Fwebsite%2F1726218578965-Gulberg%203%20Web%20Banner-02.jpg&w=1920&q=75", 
+      src: digital, 
       alt: "services 2", 
       heading: "Digital Marketing", 
-      text: "Boost your online pressence with our comprehensive digital marketing services,including SEO,socail media mangement and more.Our expert teams crafts tailored startegies to evalute you brand visibility and engagement across digital platform.Let us drive your success with the targeted campaigns,compelling content and data-driven insights."
+      text: "Boost your online presence with our comprehensive digital marketing services, including SEO, social media management, and more. Our expert team crafts tailored strategies to elevate your brand visibility and engagement across digital platforms."
     },
     { 
       src: "https://www.fleacttech.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgd.db64e832.png&w=640&q=75", 
       alt: "services 3", 
       heading: "Graphic Design", 
-      text: "Boost your online pressence with our comprehensive digital marketing services,including SEO,socail media mangement and more.Our expert teams crafts tailored startegies to evalute you brand visibility and engagement across digital platform.Let us drive your success with the targeted campaigns,compelling content and data-driven insights."
+      text: "Our creative team designs compelling visuals to engage your audience effectively."
     },
     { 
       src: "https://www.fleacttech.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgd.db64e832.png&w=640&q=75", 
       alt: "services 4", 
       heading: "Mobile App Development", 
-      text: "Maximaize your digital imapact with our mobile app development service.Our skilled team merges innovation with sleek design to create apps that deliver the tangible results.Let us transfrom your ideas into seamless mobile experiences that capitavte users and drive success."
+      text: "Transform your ideas into seamless mobile experiences with our innovative app development services."
     },
+  ];
+
+  const processSteps = [
+    { icon: 'bi bi-search' },
+    { icon: 'bi bi-gear' },
+    { icon: 'bi bi-vector-pen rotate-up' },
+    { icon: 'bi bi-send' },
   ];
 
   const handleNextImage = () => {
@@ -49,7 +58,6 @@ const Services = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    console.log("i am ok!")
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -72,53 +80,73 @@ const Services = () => {
   }, []);
 
   return (
-        <section className="services py-5" id="ServicesSection">
-      <button
-        className="left-arrow-fixed"
-        onClick={handlePrevImage}
-        style={{ left: `${arrowPosition.left}px` }}
-      >
-        <i className="bi bi-arrow-left"></i>
-      </button>
+    <section>
+      <section className="services py-5" id="ServicesSection">
+        <button
+          className="left-arrow-fixed"
+          onClick={handlePrevImage}
+          style={{ left: `${arrowPosition.left}px` }}
+        >
+          <i className="bi bi-arrow-left" style={{ fontSize: '30px' }}></i>
+        </button>
 
-      <button
-        className="right-arrow-fixed"
-        onClick={handleNextImage}
-        style={{ right: `${arrowPosition.right}px` }}
-      >
-        <i className="bi bi-arrow-right"></i>
-      </button>
+        <button
+          className="right-arrow-fixed"
+          onClick={handleNextImage}
+          style={{ right: `${arrowPosition.right}px` }}
+        >
+          <i className="bi bi-arrow-right" style={{ fontSize: '30px' }}></i>
+        </button>
 
+        <h1 className="display-4 mb-4">Our Services</h1>
+        <div className={`line-below ${showLine ? "show" : ""}`}></div>
 
-      <h1 className="display-4 mb-4">Our Services</h1>
-      <div className={`line-below ${showLine ? "show" : ""}`}></div>
-
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-md-6">
-            <img 
-              src={images[activeImage].src} 
-              alt={images[activeImage].alt} 
-              className="img-fluid service-image" 
-            />
-            {/* Dot navigation */}
-            <div className="dot-container">
-              {images.map((_, index) => (
-                <span 
-                  key={index} 
-                  className={`dot ${index === activeImage ? 'active' : ''}`} 
-                  onClick={() => setActiveImage(index)} 
-                ></span>
-              ))}
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <div className='d-flex justify-content-center'>
+                <img 
+                  src={images[activeImage].src} 
+                  alt={images[activeImage].alt} 
+                  className="img-fluid service-image" 
+                />
+              </div>
+              <div className="dot-container">
+                {images.map((_, index) => (
+                  <span 
+                    key={index} 
+                    className={`dot ${index === activeImage ? 'active' : ''}`} 
+                    onClick={() => setActiveImage(index)} 
+                  ></span>
+                ))}
+              </div>
+            </div>
+            <div className="col-md-6">
+              <h2 className="service-heading">{images[activeImage].heading}</h2>
+              <p className="service-text">{images[activeImage].text}</p>
+              <button className="get-in-touch-btn mt-4">Get In Touch</button>
             </div>
           </div>
-          <div className="col-md-6">
-            <h2 className="service-heading">{images[activeImage].heading}</h2>
-            <p className="service-text">{images[activeImage].text}</p>
-            <button className="get-in-touch-btn mt-4">Get IN Touch</button>
-          </div>
         </div>
-      </div>
+      </section>
+
+      <section className="process py-5">
+        <h2 className="display-4 mb-4 text-center">Our Process</h2>
+        <div className="container">
+          <div className="row">
+            {processSteps.map((step, index) => (
+              <div key={index} className="col-md-3 text-center">
+                <div className="process-icon mb-3">
+                  <i className={step.icon} style={{ fontSize: '50px', color: '#007bff' }}></i>
+                </div>
+                <h3 className="process-heading">{step.heading}</h3>
+              </div>
+            ))}
+          </div>
+          <h2 className="text-center">Deliver</h2>
+          <p className="text-center mt-4">Our process ensures a structured approach, aligning each project with your goals for optimal results.</p>
+        </div>
+      </section>
     </section>
   );
 };

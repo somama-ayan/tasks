@@ -4,25 +4,97 @@
    /* backdrop-filter: blur(10px); */
   height: 15vh;
 }  
-
+/* Portfolio heading section */
 .portfolioSection{
     background-color: white;
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     padding: 1rem;
 }
+/*  portfolio heading line   */
 .head2hr{
     border: none;
     height: 10px; /* Adjust thickness as needed */
     width: 100%;
     background-image: linear-gradient(90deg, #760bcb, #1e7dfa);
-    margin-top: 8px; /* Adjust spacing as needed */
-}
+    margin-top: 8px; 
+} 
+/* main heading  second section */
 .head1Port{
-    font-size: 3.6rem;
+    font-size: 3rem;
+    font-weight: 640;
+    line-height: 1;
+    /* margin-left: 50px; */
 }
+/*  paragraph experiene main div */
+.flex-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+   
+  }      /* child div */ 
+  .flex-container > .PortParaCol {
+    box-shadow: inset 0 0 20px 1px #fff, inset 0 0 20px 1px rgba(118, 11, 203, .2), inset 0 0 20px 1px rgba(30, 125, 250, .2);
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+/*  */
+
+/*  paragraph project 1.5 years */
+.portfolioPara{
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    
+}
+/* span for colors all*/
 .head1SpanPort{
     background: -webkit-linear-gradient(90deg, #760bcb,#1e7dfa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+/*  animated number 50 + span */
+.SpanPort50{
+  background: -webkit-linear-gradient(90deg, #760bcb,#1e7dfa);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+/* ///////////        third projects Section                      //////////////////////////////// */
+
+
+
+
+
+/* ///////////        media queries                     //////////////////////////////// */
+
+@media (max-width: 768px) {
+  .logoImage {
+    width: 8rem;
+    margin-left: 0;
+  }
+
+
+  
+}
+
+@media (max-width: 576px) {
+  .head1Port{
+    font-size: 2rem;
+    padding: 15px;
+    font-weight: 600;
+    line-height: 1;
+    /* margin-left: 50px; */
+}
+
+  
 }

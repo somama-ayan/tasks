@@ -29,7 +29,7 @@ const Portfolioblognavbar = () => {
         {/* <Container className="mx-auto px-5 pt-4 pb-6"> */}
         <div className="col-lg-4">
           <Navbar.Brand>
-            <h2 className="text-dark">FLEACT TECH.</h2>
+            <h2 className="text-dark logoHead">FLEACT TECH.</h2>
           </Navbar.Brand>
         </div>
         <div className="col-lg-8">

@@ -8,6 +8,7 @@ import Contact from '../Pages/Contact'
 import Services from '../Pages/Services'
 import Portfolio from '../Pages/Portfolio'
 import Blogs from '../Pages/Blogs'
+import Flectfooter from './Flectfooter';
 // import Headnavbar from './Headnavbar'
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path='/blogs'element={<Blogs />} />
             <Route path='/contact'element={<Contact />}/>
         </Routes>
+        <Flectfooter />
         </Router> 
     </div>
   )

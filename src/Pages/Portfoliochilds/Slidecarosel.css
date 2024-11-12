@@ -8,7 +8,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: brown;
+    /* background-color: brown; */
     border: none;
     border-radius: 50%;
     color: white;
@@ -24,12 +24,12 @@
 
 /* Left arrow styling */
 .custom-arrow-prev {
-    left: 100px; /* Position it closer to the center image */
+    left: 130px; /* Position it closer to the center image */
 }
 
 /* Right arrow styling */
 .custom-arrow-next {
-    right: 100px; /* Position it closer to the center image */
+    right: 130px; /* Position it closer to the center image */
 }
 
 /* Optional: Adjust the carousel image */

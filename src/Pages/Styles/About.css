@@ -26,3 +26,52 @@
   border-radius: 35px;
   margin-top: 50px;
 }
+/* ///////// mine ////// */
+
+.aboutDivBox{
+  box-shadow: rgb(255, 255, 255) 0px 0px 20px 0px inset, rgba(118, 11, 203, 0.2) 0px 0px 20px 0px inset, rgba(30, 125, 250, 0.2) 0px 0px 20px 0px inset;
+  padding: 1rem;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  margin: 1rem 0rem;
+
+  display: flex;
+  
+  align-items: center;
+}
+.aboutDivBox > p{
+  line-height: 1;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 0px 1rem;
+}
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid transparent; /* initial state */
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  clip: rect(0px, 80px, 80px, 40px); /* control fill area */
+  border: 5px solid blue; /* animated border color */
+  transform: rotate(0deg); /* starts at 0 */
+  transform-origin: center;
+}
+ .boxSpan{
+  font-weight: bold;
+  font-size: 2rem;
+
+}

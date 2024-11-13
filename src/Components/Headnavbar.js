@@ -42,9 +42,9 @@ const Headnavbar = () => {
               Portfolio
             </RouterLink>
             
-            <RouterLink className='m-2 text-decoration-none text-light navLinks' to='/blogs'>
+            {/* <RouterLink className='m-2 text-decoration-none text-light navLinks' to='/blogs'>
               Blogs
-            </RouterLink>
+            </RouterLink> */}
             
             <ScrollLink className='m-2 text-decoration-none text-light navLinks' to='ContactSection'
             smooth={true} duration={500}

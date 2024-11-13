@@ -27,7 +27,7 @@ const Portfolio = () => {
         </div>
       </section>
       {/* /////// ///////           Third section for slide                          //////////////////// */}
-      <section>
+      <section className="portThirdSection">
         <Container>
           <Row>
             <Col>
@@ -41,7 +41,7 @@ const Portfolio = () => {
         </Container>
 
 
-        <div className="container-fluid flex-container mb-5 mt-5">
+        <div className="container-fluid flex-container pb-5 pt-5">
           <div className="row" >
             <div className="col-lg-6">
             </div>
@@ -61,8 +61,8 @@ const Portfolio = () => {
         </div>
 
       </section>
-      {/* /////// ///////           Third section for slide                          //////////////////// */}
-      <section className="">
+      {/* /////// ///////          Fourth section for slide                          //////////////////// */}
+      <section className="fourthSectionPort">
         <Slidercarosel
           heading={"The Centaurus Academy"}
           headColor={"brown"}

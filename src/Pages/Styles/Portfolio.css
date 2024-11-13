@@ -3,6 +3,7 @@
     /* background: linear-gradient(293.15deg, #e5e2e7, #ffffff);  */
    /* backdrop-filter: blur(10px); */
   height: 15vh;
+  background: white;
 }  
 /* Portfolio heading section */
 .portfolioSection{
@@ -76,6 +77,9 @@
 /* .head2Development{
  color: rgba(51, 126, 61, 0.832)
 } */
+ .portThirdSection{
+  background: white;
+ }
 .developmentSection{
   box-shadow: rgb(255, 255, 255) 0px 0px 100px 10px inset, rgba(150, 149, 149, 0.2) 0px 0px 30px 0px inset, rgba(105, 105, 105, 0.2) 0px 0px 30px 0px inset;
   border-top-left-radius: 80px;
@@ -86,7 +90,10 @@
   justify-content: space-between;
   margin-bottom: 1rem;
 }
-
+/* ///////////        third projects Section                      //////////////////////////////// */
+.fourthSectionPort{
+  background: white;
+}
 
 
 

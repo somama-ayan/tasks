@@ -61,9 +61,9 @@ const Portfolioblognavbar = () => {
               <RouterLink className="m-2 text-decoration-none text-dark navLinks" to="/portfolio">
                 Portfolio
               </RouterLink>
-              <RouterLink className="m-2 text-decoration-none text-dark navLinks" to="/blogs">
+              {/* <RouterLink className="m-2 text-decoration-none text-dark navLinks" to="/blogs">
                 Blogs
-              </RouterLink>
+              </RouterLink> */}
               <span className="m-2 text-decoration-none text-dark navLinks"
                onClick={() => handleScrollToSection("ContactSection")}
               >

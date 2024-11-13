@@ -1,3 +1,7 @@
+#AboutSection{
+  background: white;
+  border-radius: 1rem;
+}
 .about-head {
   font-size: 48px;
 }

@@ -1,19 +1,73 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-
+import "./Flectfooter.css";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 const Flectfooter = () => {
-  return <div>
-    <Container>
+  return (
+    <div className="containerDiv">
+      <div class="position-absolute top-0 w-100 gradient-overlay"></div>
+      <Container>
         <Row>
-            <Col>
+          <Col lg={5} md={6} sm={12}>
             <h2>Fleact Teach</h2>
-            <p>Fleact Tech. is a technology services company, established in 2022, driven to find cutting-edge technological solutions for businesses looking for strategy with a touch of style. Our team’s dedication and collaboration to produce efficient and productive solutions helps us stand out in the industry.</p>
-            </Col>
-            <Col></Col>
-            <Col></Col>
+            <p>
+              Fleact Tech. is a technology services company, established in
+              2022, driven to find cutting-edge technological solutions for
+              businesses looking for strategy with a touch of style. Our team’s
+              dedication and collaboration to produce efficient and productive
+              solutions helps us stand out in the industry.
+            </p>
+          </Col>
+          <Col lg={3} md={6} sm={12}>
+            <h3>Navigate</h3>
+            <p>
+              <ScrollLink
+                className="m-2 text-decoration-none"
+                to="AboutSection"
+                smooth={true}
+                duration={500}
+              >
+                About
+              </ScrollLink>
+            </p>
+            <p>
+              <ScrollLink
+                className="m-2 text-decoration-none"
+                to="ServicesSection"
+                smooth={true}
+                duration={500}
+              >
+                Services
+              </ScrollLink>
+            </p>
+            <p>
+              <RouterLink className="m-2 text-decoration-none" to="/portfolio">
+                Portfolio
+              </RouterLink>
+            </p>
+            <p>
+              <ScrollLink
+                className="m-2 text-decoration-none"
+                to="ContactSection"
+                smooth={true}
+                duration={500}
+              >
+                Contact
+              </ScrollLink>
+            </p>
+          </Col>
+          <Col lg={4} md={6} sm={12}>
+            <h3>Address</h3>
+            <p>
+              Fleact Tech., Ground Floor, Capital Technology Park, Office No,
+              003 Park Rd, Islamabad, 45550
+            </p>
+          </Col>
         </Row>
-    </Container>
-  </div>;
+      </Container>
+    </div>
+  );
 };
 
 export default Flectfooter;

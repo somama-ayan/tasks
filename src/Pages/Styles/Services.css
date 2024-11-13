@@ -1,12 +1,12 @@
 .services {
-  background-color:indigo;
+  background-image: linear-gradient(to top,indigo,rgb(41, 0, 88));
   color: white;
+
 }
 .services h1 {
   font-size: 2.5rem; 
   color: white; 
   font-weight: bold;
-  /* text-align: left; */
   margin-left: 20px;
   margin-bottom: 1.5rem; 
 }
@@ -17,7 +17,7 @@
   border-radius: 8px;
 }
 .services p {
-  font-size: 1rem; 
+  font-size: 1.2rem; 
   line-height: 1.6; 
   color: white; 
   width: 500px;
@@ -48,10 +48,50 @@
 }
 
 .get-in-touch-btn {
-  background-color:indigo;
+  background-color: indigo;
   color: white;
+  border: solid white;
+  font-size: 1.4rem;
   border-radius: 50px;
   top: 100;
 
 }
+.get-in-touch-btn:hover{
+  background: linear-gradient(to left,purple,rgb(112, 193, 196));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.our-process{
+  background-color: white;
+  color: black;
+  
+  
+
+}
+.icon-style {
+  font-size: 100px;
+  width: 200px;
+  height: 200px;
+  color: #007bff;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-shadow: 0 0 50px inset rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.heading{
+  background: linear-gradient(to left,purple,rgb(112, 193, 196));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+}
+
+
+
 

@@ -4,7 +4,6 @@ const Contact = () => {
     return (
         <div>
 <section id='ContactSection'>
-    Contact
 </section>
         </div>
     )

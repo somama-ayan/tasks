@@ -53,7 +53,8 @@ const Services = () => {
                 <h2 className='d-flex justify-content-start'>Web Development</h2>
                 <p>
                   Enhance your online presence with our comprehensive web development services. 
-                  We combine cutting-edge technology with creative design to build engaging websites that drive results.
+                  We combine cutting-edge technology with creative design to craft websites that not only capitavte audience
+                  but drive results.
                 </p>
                 <div className='d-flex justify-content-start'>
                 <Button className="get-in-touch-btn">Get in Touch</Button>
@@ -69,8 +70,11 @@ const Services = () => {
               <Col xs={12} md={6} className="">
                 <h2 className='d-flex justify-content-start'>Mobile Development</h2>
                 <p>
-                  Reach your audience on the go with our mobile development services. 
-                  Our team builds engaging, user-friendly mobile apps tailored to your business needs.
+                  Maximize your digital impact with our mobile app development Services.
+                  Our skilled team merges innovation with sleek design to create engaging apps
+                  that deliver tangible results.Let us transform your ideas into seamless mobile experiences
+                  that capitavte the users and drive Success.
+
                 </p>
                 <div className='d-flex justify-content-start'>
                 <Button className="get-in-touch-btn">Get in Touch</Button>
@@ -86,8 +90,10 @@ const Services = () => {
               <Col sm={12} md={6} lg={6} className="">
                 <h2 className='d-flex justify-content-start'>Digital Marketing</h2>
                 <p>
-                  Increase your online visibility with our digital marketing services. 
-                  We create customized strategies to grow your brand and engage your audience effectively.
+                   Boost your online presence with our comprehensive digital marketing services,
+                   including socail media management, and more . Our expert team craft tailored strategies
+                   to evaluate your brand's and engagement across digital platform . Let us drive your Success
+                   with targeted compaigns,compelling content and data-driven insights.
                 </p>
                 <div className='d-flex justify-content-start'>
                 <Button className="get-in-touch-btn">Get in Touch</Button>
@@ -103,8 +109,11 @@ const Services = () => {
               <Col sm={12} md={6} lg={6} className="">
                 <h2 className='d-flex justify-content-start'>Graphics Design</h2>
                 <p>
-                  Stand out with our creative graphic design services. We craft visually appealing 
-                  designs that convey your brand message and engage your audience.
+                   Evalute your brand's visual identity with our full-suite graphic design
+                   services,encompassing UI/UX design and branding.Our talented team combines
+                   creativity with the strategic thinking to deliver capitaviting design that resonate
+                   with our audience.From logos to user interface we craft visually stunning assets that
+                   embody your brand's essence and leave a lasting impression.
                 </p>
                 <div className='d-flex justify-content-start'>
                 <Button className="get-in-touch-btn">Get in Touch</Button>
@@ -115,7 +124,44 @@ const Services = () => {
           </div>
         </Carousel>
       </Container>
-    </section>
+
+      <section className="our-process py-5">
+        <h1 className="d-flex justify-content-center text-black">Our Process</h1>
+        <Container>
+          <Row className="text-center">
+          <Col sm={3}>
+  <i className="bi bi-lightbulb icon-style path"></i>
+</Col>
+
+            <Col sm={3}>
+              <i className="bi bi-gear icon-style path"></i>
+              
+            </Col>
+            <Col sm={3}>
+              <i className="bi bi-vector-pen icon-style path"></i>
+              
+            </Col>
+            <Col sm={3}>
+              <i className="bi bi-send icon-style path"></i>
+              
+            </Col>
+          </Row>
+          <h2 className="d-flex justify-content-center heading">Deliver</h2>
+          <p>
+            After completing the development phase, we ensure the final product meets your needs, 
+            is tested thoroughly, and is ready for deployment. We provide ongoing support to 
+            ensure everything runs smoothly post-launch.
+          </p>
+        </Container>
+        </section>
+      
+  </section>
+  
+
+
+    
+     
+
   );
 };
 

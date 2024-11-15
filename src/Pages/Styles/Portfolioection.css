@@ -1,0 +1,35 @@
+.portfolioSeectionHome{
+    background-color: white;
+}
+.head2PortHome {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.head2PortHome::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 6px;
+    background-image: -webkit-linear-gradient(45deg, #760bcb,#1e7dfa);
+    margin: 0.4rem auto;
+    animation: expandLine 1s forwards;
+  }
+  
+  @keyframes expandLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 400px; /* Final width of the line */
+    }
+  }
+.filledStars{
+    font-size: 4rem;
+    color: gold;
+    margin: 1rem;
+}
+.filledStars-center{
+    font-size: 5rem;
+    color: gold;
+    margin: 1rem;
+}

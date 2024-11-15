@@ -125,7 +125,7 @@ const Services = () => {
         </Carousel>
       </Container>
 
-      <section className="our-process py-5">
+      <section className="our-process">
         <h1 className="d-flex justify-content-center text-black">Our Process</h1>
         <Container>
           <Row className="text-center">

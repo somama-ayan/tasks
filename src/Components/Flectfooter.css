@@ -1,7 +1,7 @@
 .containerDiv {
     padding-top: 3rem;
     position: relative;
-    height: 50vh; /* Set this to whatever height you need */
+    height: 70vh; /* Set this to whatever height you need */
     overflow: hidden; /* Hide any overflow */
     border-radius: 1rem;
     background: rgb(235, 232, 232);

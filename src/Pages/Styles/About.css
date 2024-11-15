@@ -2,15 +2,59 @@
   background: white;
   border-radius: 1rem;
 }
+.TopDiv{
+  padding-top: 4rem;
+  position: relative;
+  height: 15vh; /* Set this to whatever height you need */
+  overflow: hidden; /* Hide any overflow */
+  background: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; /* 20% of the container height */
+  background: linear-gradient(to bottom, #d7aef8, transparent);
+  pointer-events: none; /* Allows clicks to pass through to other elements */
+  z-index: 1;
+}
+.BottomDiv{
+  padding-bottom: 4rem;
+  position: relative;
+  height: 15vh; /* Set this to whatever height you need */
+  overflow: hidden; /* Hide any overflow */
+  background: white;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.gradientBottom{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; /* 20% of the container height */
+  background: linear-gradient(to top, #d7aef8, transparent);
+  pointer-events: none; /* Allows clicks to pass through to other elements */
+  z-index: 1;
+
+}
+
 .about-head {
   font-size: 48px;
 }
 .about-head span {
   font-weight: bold;
+  background: -webkit-linear-gradient(45deg, #760bcb,#1e7dfa);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
 }
+
 .about-line {
-  width: 32%;
-  background-color: rgb(0, 0, 0);
+  width: 50%;
+  background-image: -webkit-linear-gradient(45deg, #760bcb,#1e7dfa);
   height: 8px;
   border: none;
   margin-top: 0;
@@ -18,6 +62,14 @@
 .about-head-para {
   font-size: 20px;
   margin-top: 50px;
+  line-height: 1;
+}
+.about-head-para span{
+  font-weight: bold;
+  background: -webkit-linear-gradient(45deg, #760bcb,#1e7dfa);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
 }
 .about-card1 button {
   font-size: 18px;
@@ -25,51 +77,47 @@
   padding: 13px 25px;
   border-radius: 35px;
   margin-top: 50px;
+
+  background: -webkit-linear-gradient(45deg, #760bcb,#1e7dfa);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 3px #760bcb;
+}
+.about-card1 button:hover{
+  color: #fff; /* White text on hover */
+  background: linear-gradient(90deg, #760bcb, #1e7dfa);
+  -webkit-text-fill-color: #fff; /* Text fill color to white */
+  box-shadow: 0 0 0 0px #ffffff;
 }
 /* ///////// mine ////// */
 
 .aboutDivBox{
   box-shadow: rgb(255, 255, 255) 0px 0px 20px 0px inset, rgba(118, 11, 203, 0.2) 0px 0px 20px 0px inset, rgba(30, 125, 250, 0.2) 0px 0px 20px 0px inset;
-  padding: 1rem;
+
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
-  margin: 1rem 0rem;
-
+padding: 2rem 0rem;
+margin: 1rem 0rem;
   display: flex;
   
   align-items: center;
 }
 .aboutDivBox > p{
   line-height: 1;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  /* margin-right: 1rem;
+  margin-left: 1rem; */
   padding: 0px 1rem;
+  font-size: 20px;
 }
 .circle {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 5px solid transparent; /* initial state */
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+padding-left: 2rem;
 }
-.circle-fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  clip: rect(0px, 80px, 80px, 40px); /* control fill area */
-  border: 5px solid blue; /* animated border color */
-  transform: rotate(0deg); /* starts at 0 */
-  transform-origin: center;
-}
+
  .boxSpan{
   font-weight: bold;
   font-size: 2rem;

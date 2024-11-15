@@ -32,7 +32,6 @@ const Slidercarosel = ({heading,headColor,category,text , imageOne, imageTwo,ima
           <Carousel
             centerMode={true}
             centerSlidePercentage={60}
-            showStatus={true}
             showIndicators={true}
             showThumbs={false}
             infiniteLoop={true}

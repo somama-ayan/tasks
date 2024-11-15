@@ -7,11 +7,22 @@ import About from '../Pages/About'
 import Contact from '../Pages/Contact'
 import Services from '../Pages/Services'
 import Portfolio from '../Pages/Portfolio'
-import Blogs from '../Pages/Blogs'
+// import Blogs from '../Pages/Blogs'
 import Flectfooter from './Flectfooter';
+
+import { useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 // import Headnavbar from './Headnavbar'
 const App = () => {
+  useEffect(() => {
+    setTimeout(() => {
+    AOS.init({ duration: 1000 }); // Duration of the animation in milliseconds
+    console.log('i am rendered')
+}, 500)
+}, []);
   return (
+
     <div>
       <Router>
         {/* <Headnavbar /> */}

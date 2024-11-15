@@ -4,9 +4,22 @@ import Headnavbar from '../Components/Headnavbar'
 import About from './About'
 import Services from './Services'
 import Contact from './Contact'
+
+import bg from './Images/BackgroundImagesPages/bgImage.jpg'
+import PorfolioSection from './PorfolioSection'
 const Home = () => {
     return (
-        <div>
+        <div  style={{
+            backgroundImage: `url(${bg})`,
+            backgroundAttachment: 'fixed', 
+            backgroundSize: 'cover', 
+            backgroundPosition: 'center', 
+            backgroundRepeat: 'no-repeat', 
+            backgroundColor: 'black', 
+            // minHeight: '100vh',
+            width: '100%',
+            height: '100%'
+        }}>
             <Headnavbar />
 <section className='homeSection d-flex justify-content-center align-items-center'>
     <div className='col-lg-8 col-md-10 col-sm-12'>
@@ -17,6 +30,7 @@ const Home = () => {
 </section>
 <About />
 <Services />
+<PorfolioSection />
 <Contact />
         </div>
     )

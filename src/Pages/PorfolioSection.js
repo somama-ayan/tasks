@@ -59,8 +59,8 @@ const PorfolioSection = () => {
         </div>
       <Carousel
         className="p-5"
-        centerMode={true}
-        centerSlidePercentage={60}
+        centerMode={false}
+        centerSlidePercentage={80}
         showArrows={true}
         infiniteLoop={true}
         showThumbs={false}

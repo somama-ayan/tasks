@@ -5,8 +5,10 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 const Flectfooter = () => {
   return (
-    <div className="containerDiv">
+    <div >
+      <div className="containerDiv">
       <div class="position-absolute top-0 w-100 gradient-overlay"></div>
+      </div>
       <Container className="mt-5">
         <Row>
           <Col lg={5} md={6} sm={12}>

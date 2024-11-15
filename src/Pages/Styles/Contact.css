@@ -1,136 +1,111 @@
-#ContactSection{
-    /* background-color: white; */
+#ContactSection {
+  /* background-color: white; */
 }
 
+.contact-form {
+  /* text-align: center; */
+  color: #ffffff;
+  /* width: 1200px; */
+  padding: 20px;
+}
 
-/* Center form and set background */
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    /* background-image: radial-gradient(circle at center, #0d0025, #6720ae); */
-  /* } */ 
-  
-  .contact-form {
-    text-align: center;
-    color: #ffffff;
-    width: 1200px;
-    padding: 20px;
-  }
-  
-  /* Heading styling */
-  .contact-form h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 3rem;
-    /* position: relative; */
-  }
-  
-  .contact-form h1::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 6px;
-    background-color: #ffffff;
-    margin: 0.5rem auto;
-    animation: expandLine 1s forwards;
-  }
-  
-  @keyframes expandLine {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 540px; /* Final width of the line */
-    }
-  }
-  
-  /* Form inputs */
+/* Heading styling */
+.contact-form h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.contact-form h1::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 6px;
+  background-color: #ffffff;
+  margin: 0.5rem auto;
+  animation: expandLine 1s forwards;
+}
+
+/* Form inputs */
+.form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5 rem;
+  justify-content: space-between;
+}
+
+.input-field {
+  width: 100%;
+  /* max-width: /47%; Responsive on small screens */
+  font-size: 1rem;
+  padding: 1rem;
+  color: #ffffff;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    #8e2de2,
+    #4a00e0
+  ); /* Gradient border */
+  border-image-slice: 1;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: rgba(172, 169, 169, 0.927);
+  font-size: 1.4rem;
+}
+
+.full-width {
+  padding-top: 50px;
+}
+
+.full-width input {
+  max-width: 100%;
+}
+
+/* Button styling */
+
+.contact-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.submit-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: 2px solid #7b38c8;
+  border-radius: 30px;
+  padding: 0.75rem 2rem;
+  margin-top: 4rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  text-transform: uppercase;
+}
+
+.submit-button:hover {
+  background-color: #ffffff;
+
+  color: #511487;
+}
+
+.submit-button span {
+  font-size: larger;
+}
+
+@media screen and (max-width: 634px) {
   .form-inputs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3.5 rem;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.5rem;
   }
-  
-  .input-field {
-    width: 100%;
-    /* max-width: /47%; Responsive on small screens */
-    font-size: 1rem;
-    padding: 1rem;
-    color: #ffffff;
-    background: none;
-    border: none;
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(
-      to right,
-      #8e2de2,
-      #4a00e0
-    ); /* Gradient border */
-    border-image-slice: 1;
-    outline: none;
-  }
-  
-  .input-field::placeholder {
-    color: rgba(172, 169, 169, 0.927);
-    font-size: 1.4rem;
-  }
-  
-  .full-width {
-    padding-top: 50px;
-  }
-  
-  .full-width input {
-    max-width: 100%;
-  }
-  
-  /* Button styling */
+
   .submit-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    color: #ffffff;
-    font-size: 1.4rem;
-    font-weight: bold;
-    border: 2px solid #7b38c8;
-    border-radius: 30px;
-    padding: 0.75rem 2rem;
-    margin-top: 4rem;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-    text-transform: uppercase;
+    padding: 1rem;
   }
-  
-  .submit-button:hover {
-    background-color: #ffffff;
-  
-    color: #511487;
-  }
-  
-  .submit-button span {
-    font-size: larger;
-  }
-  
-  @media screen and (max-width: 634px) {
-    .form-inputs {
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    .contact-form h1 {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 3rem;
-        /* position: relative; */
-      }
-  
-    .input-field {
-      max-width: 100%;
-    }
-  
-    .submit-button {
-      /* width: 100%; */
-      padding: 1rem;
-    }
-  }
+}

@@ -23,13 +23,3 @@
     width: 400px; /* Final width of the line */
   }
 }
-.filledStars {
-  font-size: 4rem;
-  color: gold;
-  margin: 1rem;
-}
-.filledStars-center {
-  font-size: 5rem;
-  color: gold;
-  margin: 1rem;
-}

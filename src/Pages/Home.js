@@ -3,6 +3,8 @@ import './Styles/Home.css'
 import Headnavbar from '../Components/Headnavbar'
 import About from './About'
 import Services from './Services'
+import Process from './Process'
+import Satisfiedcustromer from './Satisfiedcustomer'
 import Contact from './Contact'
 
 import bg from './Images/BackgroundImagesPages/bgImage.jpg'
@@ -30,7 +32,9 @@ const Home = () => {
 </section>
 <About />
 <Services />
+<Process />
 <PorfolioSection />
+<Satisfiedcustromer />
 <Contact />
         </div>
     )

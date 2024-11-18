@@ -1,9 +1,6 @@
 .services {
-<<<<<<< HEAD
   background-image: linear-gradient(to top, indigo, rgb(41, 0, 88));
-=======
   background-color: rgb(29, 0, 49);
->>>>>>> 4de1372ff64264c36008d3266e5e04c006c22c22
   color: white;
 }
 
@@ -15,7 +12,6 @@
   margin-bottom: 1.5rem;
 }
 
-<<<<<<< HEAD
 .services-line {
   width: 0;
   background-image: -webkit-linear-gradient(45deg, #760bcb, #1e7dfa);
@@ -29,8 +25,7 @@
   width: 17%;
 }
 
-=======
->>>>>>> 4de1372ff64264c36008d3266e5e04c006c22c22
+
 .service-image {
   width: 100%;
   border-radius: 8px;
@@ -70,111 +65,18 @@
   border: solid white;
   font-size: 1.4rem;
   border-radius: 50px;
-<<<<<<< HEAD
-}
-=======
-  display: block;
-  margin: 0 auto; /* Center button */
-  text-align: center;
+
 }
 
->>>>>>> 4de1372ff64264c36008d3266e5e04c006c22c22
+
 .get-in-touch-btn:hover {
   background: linear-gradient(to left, purple, rgb(112, 193, 196));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-<<<<<<< HEAD
-
-.our-process {
-  background-color: white;
-  color: black;
-=======
-.our-process {
-  background-color: white; 
-  color: black;
-  margin: 0; 
-  padding: 20px 0; 
-}
-
-.our-process h1 {
-  margin-bottom: 0.5rem; 
-}
-
-.our-process p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: black;
-  width: 100%;
-  margin: 20px auto 30px;
-  text-align: justify;
-  background-color: white;
-  padding: 15px;
-  border-radius: 8px;
-  
-
->>>>>>> 4de1372ff64264c36008d3266e5e04c006c22c22
-}
-
-.icon-style {
-  font-size: 100px;
-  width: 200px;
-  height: 200px;
-  color: #007bff;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  box-shadow: 0 0 50px inset rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-<<<<<<< HEAD
-.heading {
-  background: linear-gradient(to left, purple, rgb(112, 193, 196));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-=======
-
-.services {
-  margin-bottom: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.container-fluid {
-  margin: 0 auto; 
-}
 
 
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .services h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .left-arrow-fixed,
-  .right-arrow-fixed {
-    top: 5%; /* Adjusted for better positioning */
-    font-size: 1.5rem;
-  }
-
-  .get-in-touch-btn {
-    margin-top: 1rem;
-  }
-
-  .services p {
-    width: 100%;
-    padding: 0 15px; /* Adjust padding for smaller screens */
-  }
-}
 
 @media (max-width: 576px) {
   .services h1 {
@@ -196,4 +98,4 @@ body {
   }
 }
 
->>>>>>> 4de1372ff64264c36008d3266e5e04c006c22c22
+

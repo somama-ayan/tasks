@@ -1,0 +1,26 @@
+.our-process{
+    background-color: white;
+    color: black;
+    height: 100vh;
+  }
+  .icon-style {
+    font-size: 100px;
+    width: 200px;
+    height: 200px;
+    color: #007bff;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0 0 50px inset rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  .heading{
+    background: linear-gradient(to left,purple,rgb(112, 193, 196));
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+  }
+  

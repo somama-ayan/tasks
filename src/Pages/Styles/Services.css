@@ -1,50 +1,47 @@
 .services {
-  background-image: linear-gradient(to top,indigo,rgb(41, 0, 88));
+  background-color: rgb(29, 0, 49);
   color: white;
-
 }
+
 .services h1 {
-  font-size: 2.5rem; 
-  color: white; 
+  font-size: 2.5rem;
+  color: white;
   font-weight: bold;
   margin-left: 20px;
-  margin-bottom: 1.5rem; 
+  margin-bottom: 1.5rem;
 }
-
 
 .service-image {
   width: 100%;
   border-radius: 8px;
 }
+
 .services p {
-  font-size: 1.2rem; 
-  line-height: 1.6; 
-  color: white; 
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
   width: 500px;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
   text-align: justify;
 }
-
 
 .left-arrow-fixed,
 .right-arrow-fixed {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 10%; /* Adjusted for arrows to sit above headings */
   background: none;
   border: none;
   font-size: 2rem;
   color: white;
-  cursor: pointer;
-  z-index: 2;
+  z-index: 10; /* Ensures arrows appear above other content */
 }
 
 .left-arrow-fixed {
-  left: 0;
+  left: 5%; /* Center on smaller screens */
 }
 
 .right-arrow-fixed {
-  right: 0;
+  right: 5%;
 }
 
 .get-in-touch-btn {
@@ -53,21 +50,41 @@
   border: solid white;
   font-size: 1.4rem;
   border-radius: 50px;
- 
-
+  display: block;
+  margin: 0 auto; /* Center button */
+  text-align: center;
 }
-.get-in-touch-btn:hover{
-  background: linear-gradient(to left,purple,rgb(112, 193, 196));
+
+.get-in-touch-btn:hover {
+  background: linear-gradient(to left, purple, rgb(112, 193, 196));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
-
-.our-process{
-  background-color: white;
+.our-process {
+  background-color: white; 
   color: black;
+  margin: 0; 
+  padding: 20px 0; 
+}
+
+.our-process h1 {
+  margin-bottom: 0.5rem; 
+}
+
+.our-process p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: black;
+  width: 100%;
+  margin: 20px auto 30px;
+  text-align: justify;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  
 
 }
+
 .icon-style {
   font-size: 100px;
   width: 200px;
@@ -82,12 +99,62 @@
   box-shadow: 0 0 50px inset rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-.heading{
-  background: linear-gradient(to left,purple,rgb(112, 193, 196));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.services {
+  margin-bottom: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  margin: 0 auto; 
 }
 
 
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .services h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .left-arrow-fixed,
+  .right-arrow-fixed {
+    top: 5%; /* Adjusted for better positioning */
+    font-size: 1.5rem;
+  }
+
+  .get-in-touch-btn {
+    margin-top: 1rem;
+  }
+
+  .services p {
+    width: 100%;
+    padding: 0 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .services h1 {
+    font-size: 1.8rem;
+  }
+
+  .left-arrow-fixed {
+    left: 10%;
+  }
+
+  .right-arrow-fixed {
+    right: 10%;
+  }
+
+  .get-in-touch-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+}
 

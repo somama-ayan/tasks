@@ -1,10 +1,17 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import "./Styles/Contact.css";
 const Contact = () => {
+  const { ref: contactSectionRef, inView } = useInView({
+    triggerOnce: false, // Allow re-triggering the animation
+    threshold: 0.2, // Trigger when 20% of the section is visible
+  });
   return (
     <div className="contact-form container">
-      <section id="ContactSection">
-        <h1 className="text-center">Let’s get in touch!</h1>
+      <section id="ContactSection" ref={contactSectionRef}>
+        <h1 className={`text-center ${inView ? "animate-heading" : ""}`}>
+          Let’s get in touch!
+        </h1>
 
         <div className="form-inputs">
           <input

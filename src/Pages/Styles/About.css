@@ -1,8 +1,8 @@
-#AboutSection{
+#AboutSection {
   background: white;
   border-radius: 1rem;
 }
-.TopDiv{
+.TopDiv {
   padding-top: 4rem;
   position: relative;
   height: 15vh; /* Set this to whatever height you need */
@@ -21,7 +21,7 @@
   pointer-events: none; /* Allows clicks to pass through to other elements */
   z-index: 1;
 }
-.BottomDiv{
+.BottomDiv {
   padding-bottom: 4rem;
   position: relative;
   height: 15vh; /* Set this to whatever height you need */
@@ -30,7 +30,7 @@
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
-.gradientBottom{
+.gradientBottom {
   position: absolute;
   top: 0;
   width: 100%;
@@ -38,7 +38,6 @@
   background: linear-gradient(to top, #d7aef8, transparent);
   pointer-events: none; /* Allows clicks to pass through to other elements */
   z-index: 1;
-
 }
 
 .about-head {
@@ -46,27 +45,33 @@
 }
 .about-head span {
   font-weight: bold;
-  background: -webkit-linear-gradient(45deg, #760bcb,#1e7dfa);
+  background: -webkit-linear-gradient(45deg, #760bcb, #1e7dfa);
   -webkit-background-clip: text;
   background-clip: none;
   -webkit-text-fill-color: transparent;
 }
 
 .about-line {
-  width: 50%;
-  background-image: -webkit-linear-gradient(45deg, #760bcb,#1e7dfa);
+  width: 0;
+  background-image: -webkit-linear-gradient(45deg, #760bcb, #1e7dfa);
   height: 8px;
   border: none;
-  margin-top: 0;
+
+  transition: width 1s ease-in-out;
 }
+
+.animate-line {
+  width: 43%; /* Expands the line when in view */
+}
+
 .about-head-para {
   font-size: 20px;
   margin-top: 50px;
   line-height: 1;
 }
-.about-head-para span{
+.about-head-para span {
   font-weight: bold;
-  background: -webkit-linear-gradient(45deg, #760bcb,#1e7dfa);
+  background: -webkit-linear-gradient(45deg, #760bcb, #1e7dfa);
   -webkit-background-clip: text;
   background-clip: none;
   -webkit-text-fill-color: transparent;
@@ -78,7 +83,7 @@
   border-radius: 35px;
   margin-top: 50px;
 
-  background: -webkit-linear-gradient(45deg, #760bcb,#1e7dfa);
+  background: -webkit-linear-gradient(45deg, #760bcb, #1e7dfa);
   -webkit-background-clip: text;
   background-clip: none;
   -webkit-text-fill-color: transparent;
@@ -86,7 +91,7 @@
   border: 2px solid transparent;
   box-shadow: 0 0 0 3px #760bcb;
 }
-.about-card1 button:hover{
+.about-card1 button:hover {
   color: #fff; /* White text on hover */
   background: linear-gradient(90deg, #760bcb, #1e7dfa);
   -webkit-text-fill-color: #fff; /* Text fill color to white */
@@ -94,20 +99,22 @@
 }
 /* ///////// mine ////// */
 
-.aboutDivBox{
-  box-shadow: rgb(255, 255, 255) 0px 0px 20px 0px inset, rgba(118, 11, 203, 0.2) 0px 0px 20px 0px inset, rgba(30, 125, 250, 0.2) 0px 0px 20px 0px inset;
+.aboutDivBox {
+  box-shadow: rgb(255, 255, 255) 0px 0px 20px 0px inset,
+    rgba(118, 11, 203, 0.2) 0px 0px 20px 0px inset,
+    rgba(30, 125, 250, 0.2) 0px 0px 20px 0px inset;
 
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
-padding: 2rem 0rem;
-margin: 1rem 0rem;
+  padding: 2rem 0rem;
+  margin: 1rem 0rem;
   display: flex;
-  
+
   align-items: center;
 }
-.aboutDivBox > p{
+.aboutDivBox > p {
   line-height: 1;
   /* margin-right: 1rem;
   margin-left: 1rem; */
@@ -115,11 +122,10 @@ margin: 1rem 0rem;
   font-size: 20px;
 }
 .circle {
-padding-left: 2rem;
+  padding-left: 2rem;
 }
 
- .boxSpan{
+.boxSpan {
   font-weight: bold;
   font-size: 2rem;
-
 }

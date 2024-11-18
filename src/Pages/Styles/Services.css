@@ -1,30 +1,40 @@
 .services {
-  background-image: linear-gradient(to top,indigo,rgb(41, 0, 88));
+  background-image: linear-gradient(to top, indigo, rgb(41, 0, 88));
   color: white;
-
 }
 .services h1 {
-  font-size: 2.5rem; 
-  color: white; 
+  font-size: 2.5rem;
+  color: white;
   font-weight: bold;
   margin-left: 20px;
-  margin-bottom: 1.5rem; 
+  margin-bottom: 1.5rem;
 }
 
+.services-line {
+  width: 0;
+  background-image: -webkit-linear-gradient(45deg, #760bcb, #1e7dfa);
+  height: 8px;
+  border: none;
+
+  transition: width 1s ease-in-out;
+}
+
+.animate-services-line {
+  width: 17%;
+}
 
 .service-image {
   width: 100%;
   border-radius: 8px;
 }
 .services p {
-  font-size: 1.2rem; 
-  line-height: 1.6; 
-  color: white; 
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
   width: 500px;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
   text-align: justify;
 }
-
 
 .left-arrow-fixed,
 .right-arrow-fixed {
@@ -53,20 +63,16 @@
   border: solid white;
   font-size: 1.4rem;
   border-radius: 50px;
- 
-
 }
-.get-in-touch-btn:hover{
-  background: linear-gradient(to left,purple,rgb(112, 193, 196));
+.get-in-touch-btn:hover {
+  background: linear-gradient(to left, purple, rgb(112, 193, 196));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
-.our-process{
+.our-process {
   background-color: white;
   color: black;
-
 }
 .icon-style {
   font-size: 100px;
@@ -82,12 +88,8 @@
   box-shadow: 0 0 50px inset rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-.heading{
-  background: linear-gradient(to left,purple,rgb(112, 193, 196));
+.heading {
+  background: linear-gradient(to left, purple, rgb(112, 193, 196));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
-
-
